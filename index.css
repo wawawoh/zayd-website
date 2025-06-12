@@ -23,6 +23,9 @@
     object-fit: cover;
     object-position: center;
 }
+.top {
+    object-position: center;
+}
 .carousel-item::after{
     content: "";
   position: absolute;
@@ -38,15 +41,30 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 
 /* GLOBALS 
 ------------------------------------- */
 .content {
-    padding:  0 5rem;
+    padding:  9rem 0rem;
+    h2 {
+        text-align: center;
+    }
 }
-.flexer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.first-layout {
+    
+    margin: 0 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    gap: 2rem;
 }
 
 /* WHO AM I */
+.zayd {
+   height: 50%;
+}
+.bg-wrapper {
+    background: linear-gradient(to bottom, #8c5a5a 50%, #ffffff 50%);
+
+}
 
 
 /* WE CAN FOCUS LIKE THIS 
@@ -56,3 +74,4 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 
 
 /* TOGETHER WE CANNNNNNN
 ------------------------------------------------------------------------ */
+
