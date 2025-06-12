@@ -1,0 +1,58 @@
+/* HERO */
+    .my-slider {
+        position: relative;
+        height: 80vh;
+        width: 100vw;
+        
+    }
+    .hero-content {
+        position: absolute;
+        z-index: 10;
+        top: 30%;
+        left: 10%;
+        transform: translateY(-30%);
+        /* background-color: rgba(0, 0, 0, 0.3);
+        padding: 1rem; */
+        color: white;
+    }
+
+
+.w-100 {
+    width: 100% !important;
+    height: 80vh;
+    object-fit: cover;
+    object-position: center;
+}
+.carousel-item::after{
+    content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+background: #000000;
+background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 0) 100%);
+  pointer-events: none;
+    
+}
+/* GLOBALS 
+------------------------------------- */
+.content {
+    padding:  0 5rem;
+}
+.flexer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* WHO AM I */
+
+
+/* WE CAN FOCUS LIKE THIS 
+------------------------------------------------------------------------ */
+
+
+
+/* TOGETHER WE CANNNNNNN
+------------------------------------------------------------------------ */
