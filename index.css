@@ -1,4 +1,28 @@
+:root {
+  /* Base Colors */
+  --color-dark: #131410;
+  --color-brown: #4C2818;
+  --color-tan: #A66A2C;
+  --color-beige: #D5AA72;
+  --color-cream: #fcdeb1;
+
+  /* Semantic Colors (for flexible use) */
+  --color-bg: var(--color-cream);
+  --color-text: var(--color-dark);
+  --color-primary: var(--color-tan);
+  --color-secondary: var(--color-brown);
+  --color-accent: var(--color-beige);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* HERO */
+.hero {
+    align-self: stretch;
+}
     .my-slider {
         position: relative;
         height: 80vh;
@@ -41,7 +65,10 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 
 /* GLOBALS 
 ------------------------------------- */
 .content {
-    padding:  5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:  1rem 3rem;
     h2 {
         text-align: center;
     }
@@ -52,9 +79,9 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 
     /* margin: 0 5%; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50vw 50vw;
+    grid-template-rows: 80vh 60vh;
     place-items: center;
-    gap: 2rem;
+    gap: 2rem 0;
     overflow: hidden;
     img {
         width: 100%;
@@ -65,23 +92,157 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 
     p {
        
     }
-    height: 150vh
+    /* height: 200vh */
 }
-
+.button-box {
+    align-self: stretch;
+    display: flex;
+    justify-content: space-around;
+}
 /* WHO AM I */
 
-.bg-wrapper {
-    background: linear-gradient(to bottom, #8c5a5a 40%, #ffffff 60%);
-
+.who-i-am-content {
+    background-color: var(--color-beige);
+    align-self: stretch;
+}
+/* BTOON 
+--------------------------------------*/
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+  background: var(--color-tan);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em var(--color-tan);
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
 }
 
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em var(--color-tan);
+  right: 0.3em;
+  transition: all 0.3s;
+}
 
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
 
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: var(--color-brown);
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+/* TOOLTIP
+---------------- */
+.tooltip .tooltip-inner {
+  background-color: #4C2818 !important; /* Background */
+  color: #F5F6ED !important;           /* Text color */
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #4C2818;
+    --bs-btn-border-color: #6c757d;
+}
 /* WE CAN FOCUS LIKE THIS 
 ------------------------------------------------------------------------ */
 
-
+.center {
+    margin: 3% 0 ;
+    h2 {
+        margin-bottom: 1rem;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+        
+    text-align: center;
+    ul {
+        text-align: start;
+    }
+}
+.why-me {
+    background-color: var(--color-cream);
+    align-self: stretch;
+    padding: 1rem 0;
+    
+    
+  
+}
+.grid-container {
+    align-self: stretch;
+    padding:0 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    /* place-items: center; */
+    .grid-item {
+        display: flex;
+        padding: 2rem;
+        gap: 1rem;
+        
+    }
+      img {
+        align-self: flex-start;
+        height: fit-content;
+        height: 50px;
+    }
+    .small-content {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        gap: 2rem;
+    }
+}
 
 /* TOGETHER WE CANNNNNNN
 ------------------------------------------------------------------------ */
+.cta {
+    align-self: stretch;
+    background-color: var(--color-beige);
+    padding: 1rem 0;
+}
 
+@media screen and (max-width:1000px) {
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .first-layout{
+        display: flex;flex-direction: column;
+    }
+    
+}
