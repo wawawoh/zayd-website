@@ -104,7 +104,7 @@ ul {
     object-position: center;
 }
 .slideshow-zayd{
-    object-fit: contain;
+    object-position: right;
 }
 
 .top {
