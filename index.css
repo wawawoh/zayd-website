@@ -12,7 +12,8 @@
   --color-accent: var(--color-beige);
 }
 a {
-    width: max-content;
+    width: 100%;
+    align-self: stretch;
 }
 body {
     /* display: flex; */
@@ -102,6 +103,10 @@ ul {
     object-fit: cover;
     object-position: center;
 }
+.slideshow-zayd{
+    object-fit: contain;
+}
+
 .top {
     object-position: center;
 }
@@ -152,7 +157,9 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 
 .button-box {
     align-self: stretch;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    gap: 1rem;
 }
 /* WHO AM I */
 
@@ -168,16 +175,15 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 
     border-radius: 7rem;
     background-color: white;
     font-size: clamp (0.9em 2vw 1em);
+    width: 100%;
+    
 }
 .trans {
     background:none;
     color: white;
     border: white solid 1px;
 }
-.button-box {
-    flex-direction: column;
-    gap: 2rem;
-}
+
 /* From Uiverse.io by adamgiebl */ 
 .cssbuttons-io-button {
   background: tan;
@@ -362,6 +368,10 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 
     .first-layout{
         display: flex;flex-direction: column;
     }
+    .button-box {
+    flex-direction: column;
+    gap: 2rem;
+}
     
 }
 
