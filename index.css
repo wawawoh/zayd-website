@@ -2,7 +2,7 @@
   /* Base Colors */
   
   --color-beige: #D5AA72;
-  --color-cream: #fcdeb1;
+  --color-default: #ccbba9;
 
   /* Semantic Colors (for flexible use) */
   --color-bg: var(--color-cream);
@@ -20,7 +20,8 @@ body {
     flex-direction: column;
     align-items: center;
 }
-header {
+
+/* header {
     z-index: 100;
     background-color: var(--color-beige);
     display: flex;
@@ -45,7 +46,7 @@ box-sizing: border-box;
             color: black;
         }
     }
-}
+} */
 /* HERO */
 .hero {
     align-self: stretch;
@@ -128,7 +129,7 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding:  1rem 3rem;
+    padding:  5rem 3rem;
     h2 {
         text-align: center;
     }
@@ -164,7 +165,7 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 
 /* WHO AM I */
 
 .who-i-am-content {
-    background-color: var(--color-cream);
+    background-color: var(--color-default);
     align-self: stretch;
 }
 /* BTOON 
@@ -184,27 +185,7 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 
     border: white solid 1px;
 }
 
-/* From Uiverse.io by adamgiebl */ 
-.cssbuttons-io-button {
-  background: tan;
-  color: black;
-  font-family: inherit;
-  padding: 0.35em;
-  padding-left: 1.2em;
-  font-size: 17px;
-  font-weight: 500;
-  border-radius: 0.9em;
-  border: none;
-  letter-spacing: 0.05em;
-  display: flex;
-  align-items: center;
-  box-shadow: inset 0 0 1.6em -0.6em tan;
-  overflow: hidden;
-  position: relative;
-  height: 2.8em;
-  padding-right: 3.3em;
-  cursor: pointer;
-}
+
 
 .cssbuttons-io-button .icon {
   background: white;
@@ -275,8 +256,8 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 
     --bs-btn-border-color: #6c757d;
 }
 .btn-secondary {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #D5AA72  !important;
+    --bs-btn-color: #292929 !important;
+    --bs-btn-bg: #ccbba9  !important;
     --bs-btn-border-color: #6c757d;
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #5c636a;
@@ -294,7 +275,7 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 
 ------------------------------------------------------------------------ */
 
 .center {
-    padding: 3% 0 ;
+    /* padding: 3% 0 ;/ */
     h2 {
         margin-bottom: 1rem;
     }
@@ -311,11 +292,12 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 
 .why-me {
     background-color: var(--color-cream);
     align-self: stretch;
+   
     ul {
         padding-left: 1rem;
         margin: 1rem 0 ;
     }
-    /* padding: 1rem 0;// */
+    padding: 2rem 0;
     
     
   
@@ -324,7 +306,7 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 
     align-self: stretch;
     /* background-color: white; */
     gap: 1rem;
-    padding:0 3rem;
+    padding:2rem 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr ;
@@ -333,7 +315,7 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 
         display: flex;
         padding: 2rem;
         gap: 1rem;
-        background-color: white;
+        background-color: #ccbba9;
         border-radius: 1rem;
         
     }
@@ -355,9 +337,18 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 
 .cta {
     align-self: stretch;
     background-color: white;
-    padding: 1rem 0;
+    /* padding: 1rem 0;/ */
     background-color: #383333;
     color: white;
+    button {
+        border-radius: 3rem;
+        color: white;
+        padding: 0.5rem 1rem;
+        width: 50vw;
+        background: none;
+        border: solid 1px #ffffff;
+
+    }
 }
 
 @media screen and (max-width:1000px) {
@@ -375,13 +366,6 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 50%, rgba(207, 218, 184, 
     
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-beige);
-}
 
 @media screen and (max-width:600px) {
     .hero-content {
